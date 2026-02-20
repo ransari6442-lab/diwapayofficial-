@@ -53,15 +53,15 @@ font-size:.9rem;
 
 /* BUTTON */
 .btn{
-margin-top:18px;
+margin-top:25px;
 display:flex;
 align-items:center;
 justify-content:center;
 width:100%;
-height:56px;
+height:58px;
 border-radius:35px;
 font-size:1rem;
-font-weight:700;
+font-weight:800;
 background:#FFD700;
 color:#000;
 cursor:pointer;
@@ -69,8 +69,7 @@ transition:.2s ease;
 border:none;
 }
 
-/* CLICK EFFECT */
-.btn.clicked{
+.btn:active{
 transform:scale(0.95);
 opacity:.7;
 }
@@ -88,34 +87,29 @@ border:1px solid rgba(255,215,0,.15);
 margin:8px 0;
 font-size:.9rem;
 }
-
-/* STICKY BUTTON */
-.sticky{
-position:fixed;
-bottom:12px;
-left:50%;
-transform:translateX(-50%);
-width:calc(100% - 24px);
-max-width:420px;
-height:58px;
-border-radius:35px;
-background:#FFD700;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:1rem;
-font-weight:800;
-color:#000;
-cursor:pointer;
-box-shadow:0 0 15px rgba(255,215,0,.6);
-transition:.2s ease;
-}
-
-.sticky.clicked{
-transform:translateX(-50%) scale(0.96);
-opacity:.7;
-}
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1840772129964122');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1840772129964122&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
@@ -129,61 +123,21 @@ opacity:.7;
 <div class="title">DIWA PAY</div>
 <div class="subtitle">Premium Trading Community • Smart Strategy • VIP Access</div>
 
-<button class="btn" onclick="openTelegram(this)">
-📩 CONTACT ON TELEGRAM
+<a href="https://t.me/+uhT_i5qZ0VkzMDI1" target="_blank" style="text-decoration:none;">
+<button class="btn">
+🚀 JOIN TELEGRAM NOW
 </button>
-
-<button class="btn" onclick="openTelegram(this)">
-🚀 CONTACT NOW
-</button>
+</a>
 
 <div class="card">
 <p>🔥 Daily High Earning Opportunities</p>
 <p>💰 High Profit Target Potential</p>
 <p>⚡ Advanced Strategy</p>
 <p>📊 Expert Guidance</p>
-<p>📩 Limited VIP Seats – DM Fast</p>
+<p>📩 Limited VIP Seats – Join Fast</p>
 </div>
 
 </div>
-
-<div class="sticky" onclick="openTelegram(this)">
-📞 CONTACT NOW
-</div>
-
-<script>
-function openTelegram(button){
-  // Click animation
-  button.classList.add("clicked");
-
-  // Track Lead event in Meta Pixel
-  if (typeof fbq === "function") {
-    fbq('track', 'Lead');
-  }
-
-  // Redirect to Telegram after 300ms
-  setTimeout(function(){
-    window.location.href="https://t.me/Mangeraddddiiiii";
-  }, 300);
-}
-</script>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
-s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1840772129964122'); 
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1840772129964122&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 
 </body>
 </html>
